@@ -3,16 +3,22 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: 'Shantell Sans', cursive;
 }
 
 .container {
   min-width: 500px;
   max-width: 500px;
   min-height: 500px;
+  border: 1px solid black;
   display: grid;
-  grid-template-columns: repeat(16, 1fr);
+  grid-template-columns: repeat(64, 1fr);
+}
+
+.paint {
+  background: black;
 }
 
 div {
-  border: 0.25px solid black;
+  border: 0.1px solid hsla(0, 0%, 0%, 0.050);
 }
