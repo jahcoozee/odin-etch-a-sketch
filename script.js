@@ -2,7 +2,7 @@
 const container = document.querySelector(".container");
 
 // Populate canvas with a default grid size of 16x16
-for (i = 0; i < 256; i++) {
+for(i = 0; i < 256; i++) {
   const pixel = document.createElement("div");
   pixel.classList.add("pixel");
   container.appendChild(pixel);
@@ -25,7 +25,7 @@ function setGridSize() {
   let size = prompt("Select a new grid size (between 1-100):");
 
   // Populate new canvas based on user input
-  for (i = 0; i < size * size; i++) {
+  for(i = 0; i < size * size; i++) {
     const pixel = document.createElement("div");
     pixel.classList.add("pixel");
     container.appendChild(pixel);
@@ -46,4 +46,13 @@ function setGridSize() {
 function buildNewCanvas() {
   const pixel = document.createElement("div");
   container.replaceChildren();
+}
+
+// Allow user to clear paint on current canvas
+const clearButton = document.querySelector(".clear");
+clearButton.addEventListener("click", clearGrid);
+
+function clearGrid() {
+  let pixels = container.querySelectorAll(".pixel");
+  pixels.forEach(pixel => pixel.classList.remove("paint"));
 }
