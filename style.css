@@ -29,6 +29,7 @@ button {
   min-height: 500px;
   border: 1px solid black;
   border-radius: 1%;
+  background: white;
   display: grid;
   grid-template-columns: repeat(16, 1fr);
 }
