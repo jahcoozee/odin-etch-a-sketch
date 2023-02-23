@@ -1,11 +1,13 @@
 body {
-  display: flex;
   min-height: 100vh;
+  font-family: 'Shantell Sans', cursive;
+  background:hsl(204, 44%, 15%);
+  color: white;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 10px;
-  font-family: 'Shantell Sans', cursive;
 }
 
 header {
@@ -16,11 +18,34 @@ header {
 }
 
 h1 {
+  background: hsl(38,89%,58%);
   margin: 0;
+  padding: 0 50px;
+  border-radius: 30px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 button {
   font-family: 'Shantell Sans', cursive;
+  border-radius: 10px;
+  border: 0;
+}
+
+.grid-size {
+  background: hsl(212,78%,60%);
+  color: white;
+  padding: 0 10px;
+}
+
+.clear {
+  background: hsl(161,51%,57%);
+  color: white;
+  padding: 0 10px;
 }
 
 .container {
